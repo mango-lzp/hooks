@@ -4159,6 +4159,7 @@ __metadata:
     antd: ^4.3.3
     babel-loader: ^8.1.0
     babel-plugin-import: ^1.12.0
+    babel-plugin-transform-async-to-promises: ^0.8.15
     del: ^5.1.0
     dumi: ^1.1.7
     enzyme: ^3.10.0
@@ -4918,6 +4919,13 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 81be5914f241d785abdfa3b5fc9005792b1b675e3e0a48bbc12db25b49e965985a500fc2008c8026ec7625a757d6d43aa44a75369fece1a413bd9863369e5a9c
+  languageName: node
+  linkType: hard
+
+"babel-plugin-transform-async-to-promises@npm:^0.8.15":
+  version: 0.8.15
+  resolution: "babel-plugin-transform-async-to-promises@npm:0.8.15"
+  checksum: d3a2e9fd125b1ecf0acb34d4b3f2a5fae4d9888ed83fc071498154dd9479aac34e739c0cae7b1c928e9840a9dc612412456cf1c9474f70c9293fcefe621f43bf
   languageName: node
   linkType: hard
 
