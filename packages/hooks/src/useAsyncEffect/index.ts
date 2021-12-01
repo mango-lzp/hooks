@@ -12,7 +12,7 @@ function useAsyncEffect(
   }
   useEffect(() => {
     const e = effect();
-    let cancelled = false;
+    let cancelled = false; // 定义一个Promise然后自执行，即可实现函数内同步的效果。 // 但是在频繁触发和dom卸载的时候 可以处理一下 generator 可以提前终止。
     async function execute() {
       if (isGenerator(e)) {
         while (true) {

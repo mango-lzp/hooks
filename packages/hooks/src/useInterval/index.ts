@@ -19,7 +19,7 @@ function useInterval(
     }
     const timer = setInterval(() => {
       fnRef.current();
-    }, delay);
+    }, delay); // 依赖变更  函数重新执行时，会执行 return 里面的函数。 // 离开页面，dom卸载时，也会执行。
     return () => {
       clearInterval(timer);
     };
