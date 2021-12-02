@@ -17,9 +17,23 @@ export default () => {
     message.info(`Current count is ${count}`);
   }, [count]);
 
-  const memoizedFn = useMemoizedFn(() => {
-    message.info(`Current count is ${count}`);
-  });
+  class LogThis {
+    logger = 'thislog';
+    log() {
+      return this.logger;
+    }
+  }
+
+  function anyway() {
+    console.log(this);
+    const log = new LogThis();
+    console.log(log.log());
+  }
+
+  // const memoizedFn = useMemoizedFn(() => {
+  //   message.info(`Current count is ${count}`);
+  // });
+  const memoizedFn = useMemoizedFn(anyway);
 
   return (
     <>
